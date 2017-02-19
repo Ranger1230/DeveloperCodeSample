@@ -1,0 +1,40 @@
+﻿<Properties StartupConfiguration="{CF6EFDCD-57A0-445A-83E0-FCA67CEC6AA3}|">
+  <MonoDevelop.Ide.ItemProperties.SampleMvcApp PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Sample.Domain/SampleContext.cs">
+    <Files>
+      <File FileName="SampleMvcApp/Controllers/ManageController.cs" Line="99" Column="50" />
+      <File FileName="SampleMvcApp/Controllers/DoughnutController.cs" Line="39" Column="64" />
+      <File FileName="SampleMvcApp/Views/Doughnut/Index.cshtml" Line="10" Column="45" />
+      <File FileName="Sample.Domain/Doughnut.cs" Line="10" Column="18" />
+      <File FileName="SampleMvcApp/Views/Doughnut/Edit.cshtml" Line="22" Column="65" />
+      <File FileName="SampleMvcApp/Views/Manage/Index.cshtml" Line="9" Column="6" />
+      <File FileName="SampleMvcApp/Views/Manage/ManageLogins.cshtml" Line="9" Column="1" />
+      <File FileName="Sample.Domain/SampleContext.cs" Line="25" Column="6" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="SampleMvcApp" expanded="True">
+            <Node name="Sample.Domain" expanded="True">
+              <Node name="SampleContext.cs" selected="True" />
+            </Node>
+            <Node name="SampleMvcApp" expanded="True">
+              <Node name="App_Start" expanded="True" />
+              <Node name="Controllers" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Doughnut" expanded="True" />
+                <Node name="Manage" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
