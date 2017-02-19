@@ -1,0 +1,20 @@
+﻿@model Sample.Domain.Doughnut
+
+<h4>@ViewBag.Title</h4>
+<p>
+    @Html.ActionLink("Back", "Index")
+    @Html.ActionLink("Edit", "Edit", new { Id = Model.Id })
+</p>
+<hr />
+<div >
+    <span>@Html.DisplayNameFor(m => m.Name):</span>
+    <span>
+        @Html.DisplayFor(m => m.Name)
+    </span>
+</div>
+<div>
+    <span>@Html.DisplayNameFor(m => m.Flavor):</span>
+    <span>
+        @Html.DisplayFor(m => m.Flavor.Name)
+    </span>
+</div>

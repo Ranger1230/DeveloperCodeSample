@@ -1,0 +1,30 @@
+﻿@model Sample.Domain.Doughnut
+<p class="text-success">@ViewBag.ResponseMessage</p>
+@using (Html.BeginForm("SaveDoughnut", "Doughnut", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+{
+    @Html.AntiForgeryToken()
+    @Html.HiddenFor(m => m.Id)
+    <h4>@ViewBag.Title</h4>
+    <hr />
+    <div class="form-group">
+        @Html.LabelFor(m => m.Name, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Flavor, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @*@Html.TextBoxFor(m => m.Flavor.Name, new { @class = "form-control" })*@
+            @Html.DropDownListFor(x => x.FlavorId,
+                from Sample.Domain.FlavorEnum flavor in Enum.GetValues(typeof(Sample.Domain.FlavorEnum))
+                select new SelectListItem() { Text = flavor.ToString(), Value = ((int)flavor).ToString() }, "-Please select-"
+           )
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <button type="submit" class="btn btn-default">Save Doughnut</button>
+        </div>
+    </div>
+}
